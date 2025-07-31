@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merienda", cursive;
+}
+
+body {
+    background: linear-gradient(to right, #0d0018, #12121a);
+    margin: 10%;
+}
+
+.container {
+    max-width: 480px;
+    background: #332f24;
+    padding: 20px 35px;
+    border-radius: 15px;
+    border: 1px solid #571ca3;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2.3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px rgba(102, 11, 221, 0.8);
+
+    width: 100%;
+
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.span {
+    color: #eee;
+    text-shadow: none;
+}
+
+.box {
+    width: 100%;
+    margin: 5%;
+}
+
+.box input {
+    width: 85%;
+    padding: 10px;
+    color: #332f24;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 2px solid #660bdd;
+}
+
+.box .add {
+    width: 12%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    color: #ffffff;
+    background: #660bdd;
+
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box .add:hover {
+    background: #8b50d8;
+}
+
+.box .add:active {
+    transform: scale(0.90)
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+}
+
+li {
+    width: 100%;
+    background: #332f24;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid #571ca3;
+    border-radius: 5px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+img:active {
+    opacity: 0.6;
+    border: 1px solid #f50808;
+    transform: scale(0.90)
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px 10px;        
+    }
+    .title {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+
+    .span {
+    display: none;
+}
+
+}
